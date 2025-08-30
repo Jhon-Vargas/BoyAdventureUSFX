@@ -19,7 +19,7 @@ ABoyAdventureUSFXGameMode::ABoyAdventureUSFXGameMode()
 
 void ABoyAdventureUSFXGameMode::BeginPlay()
 {
-
+    GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("GameMode BeginPlay"));
     // Verifica que el mundo esté disponible
     UWorld* Mundo = GetWorld();
     if (Mundo)
